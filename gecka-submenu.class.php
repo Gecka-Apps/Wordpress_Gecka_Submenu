@@ -231,7 +231,7 @@ class Gecka_Walker_Nav_Menu extends Walker_Nav_Menu {
 	 * @param int $current_page Menu item ID.
 	 * @param object $args
 	 */
-	function start_el(&$output, $item, $depth, $args) {
+	function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
 		global $wp_query;
 		$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
 
@@ -296,7 +296,7 @@ if(!class_exists('Walker_Nav_Menu_DropDown') && is_admin() ) {
          * @param int $current_page Menu item ID.
          * @param object $args
          */
-        function start_el(&$output, $item, $depth, $args) {
+        function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
         	
             global $wp_query;
             $pad = str_repeat('&nbsp;', $depth * 3);
