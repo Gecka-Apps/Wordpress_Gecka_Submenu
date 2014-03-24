@@ -59,6 +59,8 @@ class Gecka_Submenu_NavMenuHacks {
     }
 
     function setup_posts ($type, &$item, &$posts, &$items, &$order, $child_of=0) {
+		
+		if( !$posts ) return false;
 
         $_ids = $this->get_ids($type, $order, $posts);
 
