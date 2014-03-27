@@ -25,8 +25,8 @@ Licence: GPL2
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-define('GKSM_PATH' , WP_PLUGIN_DIR . "/" . plugin_basename(dirname(__FILE__)) );
-define('GKSM_URL'  , WP_PLUGIN_URL . "/" . plugin_basename(dirname(__FILE__)) );
+define('GKSM_PATH' , plugin_dir_path(__FILE__) );
+define('GKSM_URL'  , plugin_dir_url(__FILE__) );
 
 define('GKSM_VERSION', '0.7');
 
