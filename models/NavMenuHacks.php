@@ -38,22 +38,24 @@ class Gecka_Submenu_NavMenuHacks {
 
         $order = sizeof ( $items ) + 1;
 
-        foreach ( $items as $item ) {
-
-            if ($item->autopopulate !== '1')
-                continue;
-
-            switch ($item->autopopulate_type) {
-
-                case 'subpages' :
-
-                    $pages = get_pages ( apply_filters ( 'gecka-submenu-get_pages', array ('child_of' => $item->object_id, 'sort_column' => 'menu_order, post_title', 'post_type'=> isset($item->object) ? $item->object : 'page' ) ) );
-
-                    $this->setup_posts ( 'post', $item, $pages, $items, $order );
-
-                    break;
+        if(is_array($items)){
+            foreach ( $items as $item ) {
+    
+                if ($item->autopopulate !== '1')
+                    continue;
+    
+                switch ($item->autopopulate_type) {
+    
+                    case 'subpages' :
+    
+                        $pages = get_pages ( apply_filters ( 'gecka-submenu-get_pages', array ('child_of' => $item->object_id, 'sort_column' => 'menu_order, post_title', 'post_type'=> isset($item->object) ? $item->object : 'page' ) ) );
+    
+                        $this->setup_posts ( 'post', $item, $pages, $items, $order );
+    
+                        break;
+                }
+    
             }
-
         }
         return $items;
     }
@@ -62,27 +64,27 @@ class Gecka_Submenu_NavMenuHacks {
 
         $_ids = $this->get_ids($type, $order, $posts);
 
-        foreach($posts as $key=>$post) {
-
-            $id = isset($post->ID) ? $post->ID : $post->term_id;
-
-            $parent_id = $item->ID;
-
-            if( isset($post->post_parent) && $post->post_parent && $post->post_parent != $item->object_id ) {
-                $parent_id = $_ids[$post->post_parent];
+        if(is_array($posts)){
+            foreach($posts as $key=>$post) {
+    
+                $id = isset($post->ID) ? $post->ID : $post->term_id;
+    
+                $parent_id = $item->ID;
+    
+                if( isset($post->post_parent) && $post->post_parent && $post->post_parent != $item->object_id ) {
+                    $parent_id = $_ids[$post->post_parent];
+                }
+    
+                if( isset($post->parent) && $post->parent && $post->parent != $item->object_id && $post->parent!=$child_of ) {
+                    $parent_id = $_ids[$post->parent];
+                }
+    
+                if(isset($post->term_id)) $items[] = $this->menu_item_from_tax($post, $_ids[$id], $parent_id, $order);
+                else $items[] = $this->menu_item_from_post($post, $_ids[$id], $parent_id, $order);
+    
+                $order++;
             }
-
-            if( isset($post->parent) && $post->parent && $post->parent != $item->object_id && $post->parent!=$child_of ) {
-                $parent_id = $_ids[$post->parent];
-            }
-
-            if(isset($post->term_id)) $items[] = $this->menu_item_from_tax($post, $_ids[$id], $parent_id, $order);
-            else $items[] = $this->menu_item_from_post($post, $_ids[$id], $parent_id, $order);
-
-            $order++;
-
-        }
-
+        }  
         return $posts;
 
     }
