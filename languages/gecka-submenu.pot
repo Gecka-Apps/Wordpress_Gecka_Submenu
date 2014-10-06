@@ -23,7 +23,7 @@ msgid "<a href=\"http://www.gecka-apps.com\" target=\"_blank\">Discover the pro 
 msgstr ""
 
 #: ../views/Nav-Menu-Fields.php:6
-msgid "Automaticaly populate with child pages"
+msgid "Automatically populate with child pages"
 msgstr ""
 
 #: ../widgets/Custom-menu.php:14

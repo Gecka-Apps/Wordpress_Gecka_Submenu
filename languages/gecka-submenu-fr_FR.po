@@ -24,7 +24,7 @@ msgid "<a href=\"http://www.gecka-apps.com\" target=\"_blank\">Discover the pro 
 msgstr "<a href=\"http://www.gecka-apps.com\" target=\"_blank\">Découvrez la version pro</a> pour obtenir le maximum du système de menus de Wordpress."
 
 #: ../views/Nav-Menu-Fields.php:6
-msgid "Automaticaly populate with child pages"
+msgid "Automatically populate with child pages"
 msgstr "Afficher les sous pages automatiquement"
 
 #: ../widgets/Custom-menu.php:14
