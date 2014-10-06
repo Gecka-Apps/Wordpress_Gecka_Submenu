@@ -16,7 +16,7 @@ class Gecka_Submenu_NavMenuHacks {
             add_action('wp_update_nav_menu_item', array($this, 'wp_update_nav_menu_item'),10,3  );
 
             /* load custom css */
-            add_action('admin_init', array($this, 'register_scripts'));
+            add_action( 'admin_init', array($this, 'register_scripts'));
             add_action( "admin_print_styles-nav-menus.php", array($this, 'admin_print_styles') );
 
         }
