@@ -36,6 +36,8 @@ class Gecka_Submenu_NavMenuHacks {
         if (is_admin () && $GLOBALS ['pagenow'] == 'nav-menus.php')
             return $items;
 
+        if( !is_array($items) ) return $items;
+
         $order = sizeof ( $items ) + 1;
 
         foreach ( $items as $item ) {
@@ -59,6 +61,8 @@ class Gecka_Submenu_NavMenuHacks {
     }
 
     function setup_posts ($type, &$item, &$posts, &$items, &$order, $child_of=0) {
+
+        if( ! is_array($posts) ) return $posts;
 
         $_ids = $this->get_ids($type, $order, $posts);
 
