@@ -224,6 +224,7 @@ class Gecka_Submenu_NavMenuHacks {
     }
 
     function wp_nav_menu_item_custom_fields ( $item_id, $item, $depth, $args) {
+        if( $item->type !== 'post_type' ) return;
         include GKSM_PATH . '/views/Nav-Menu-Fields.php';
     }
 
