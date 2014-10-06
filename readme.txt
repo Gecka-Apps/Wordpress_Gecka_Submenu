@@ -42,6 +42,10 @@ http://www.youtube.com/watch?v=DHjMfD-k2Mo
 
 == Changelog ==
 
+= 0.7.1 =
+* German
+* Fixes
+
 = 0.7 =
 * performances enhancements
 * better widget with specific class support
