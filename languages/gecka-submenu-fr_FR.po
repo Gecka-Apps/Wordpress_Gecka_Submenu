@@ -2,17 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gecka Sub-Menu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-14 14:54+1100\n"
+"POT-Creation-Date: 2014-10-06 19:02+1100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Laurent Dinclaux <laurent@gecka.nc>\n"
 "Language-Team: Gecka <contact@gecka.nc>\n"
-"Language: \n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-Language: French\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../gecka-submenu.class.php:186
@@ -20,12 +20,12 @@ msgid "You are using Gecka Submenu."
 msgstr "Vous utilisez Gecka Submenu."
 
 #: ../gecka-submenu.class.php:186
-msgid "<a href=\"http://www.gecka-apps.com\" target=\"_blank\">Discover the pro version</a> to get the most out of the Wordpress menu system."
-msgstr "<a href=\"http://www.gecka-apps.com\" target=\"_blank\">Découvrez la version pro</a> pour obtenir le maximum du système de menus de Wordpress."
-
-#: ../views/Nav-Menu-Fields.php:6
-msgid "Automatically populate with child pages"
-msgstr "Afficher les sous pages automatiquement"
+msgid ""
+"<a href=\"http://www.gecka-apps.com\" target=\"_blank\">Discover the pro "
+"version</a> to get the most out of the Wordpress menu system."
+msgstr ""
+"<a href=\"http://www.gecka-apps.com\" target=\"_blank\">Découvrez la version "
+"pro</a> pour obtenir le maximum du système de menus de Wordpress."
 
 #: ../widgets/Custom-menu.php:14
 msgid "Use this widget to add one of your custom menus as a widget."
@@ -96,8 +96,7 @@ msgstr ""
 msgid "Class:"
 msgstr ""
 
-#: ../widgets/Custom-menu.php:162
-#: ../widgets/Custom-menu.php:171
+#: ../widgets/Custom-menu.php:162 ../widgets/Custom-menu.php:171
 msgid "First select a nav menu"
 msgstr "Sélectionnez d'abord un menu"
 
@@ -117,30 +116,39 @@ msgstr "Page actuelle"
 msgid "Current page's top parent"
 msgstr "Le parent le plus haut"
 
+#: ../views/Nav-Menu-Fields.php:6
+msgid "Automatically populate with child pages"
+msgstr "Afficher les sous pages automatiquement"
+
 #: ../models/Nav-Menu-Edit-Walker.php:65
-#: ../models/Nav-Menu-Edit-Walker.php:252
+#: ../models/Nav-Menu-Edit-Walker.php:254
+#: ../models/Nav-Menu-Edit-Walker.php:438
 #, php-format
 msgid "%s (Pending)"
 msgstr ""
 
 #: ../models/Nav-Menu-Edit-Walker.php:104
 #: ../models/Nav-Menu-Edit-Walker.php:106
-#: ../models/Nav-Menu-Edit-Walker.php:293
+#: ../models/Nav-Menu-Edit-Walker.php:295
+#: ../models/Nav-Menu-Edit-Walker.php:483
 msgid "Edit Menu Item"
 msgstr ""
 
 #: ../models/Nav-Menu-Edit-Walker.php:115
-#: ../models/Nav-Menu-Edit-Walker.php:302
+#: ../models/Nav-Menu-Edit-Walker.php:304
+#: ../models/Nav-Menu-Edit-Walker.php:492
 msgid "URL"
 msgstr ""
 
 #: ../models/Nav-Menu-Edit-Walker.php:122
-#: ../models/Nav-Menu-Edit-Walker.php:309
+#: ../models/Nav-Menu-Edit-Walker.php:311
+#: ../models/Nav-Menu-Edit-Walker.php:499
 msgid "Navigation Label"
 msgstr ""
 
 #: ../models/Nav-Menu-Edit-Walker.php:128
-#: ../models/Nav-Menu-Edit-Walker.php:315
+#: ../models/Nav-Menu-Edit-Walker.php:317
+#: ../models/Nav-Menu-Edit-Walker.php:505
 msgid "Title Attribute"
 msgstr ""
 
@@ -157,47 +165,77 @@ msgid "New window or tab"
 msgstr ""
 
 #: ../models/Nav-Menu-Edit-Walker.php:143
-#: ../models/Nav-Menu-Edit-Walker.php:327
+#: ../models/Nav-Menu-Edit-Walker.php:329
+#: ../models/Nav-Menu-Edit-Walker.php:517
 msgid "CSS Classes (optional)"
 msgstr ""
 
 #: ../models/Nav-Menu-Edit-Walker.php:149
-#: ../models/Nav-Menu-Edit-Walker.php:333
+#: ../models/Nav-Menu-Edit-Walker.php:335
+#: ../models/Nav-Menu-Edit-Walker.php:523
 msgid "Link Relationship (XFN)"
 msgstr ""
 
 #: ../models/Nav-Menu-Edit-Walker.php:155
-#: ../models/Nav-Menu-Edit-Walker.php:339
+#: ../models/Nav-Menu-Edit-Walker.php:341
+#: ../models/Nav-Menu-Edit-Walker.php:529
 msgid "Description"
 msgstr ""
 
 #: ../models/Nav-Menu-Edit-Walker.php:157
-#: ../models/Nav-Menu-Edit-Walker.php:341
-msgid "The description will be displayed in the menu if the current theme supports it."
+#: ../models/Nav-Menu-Edit-Walker.php:343
+#: ../models/Nav-Menu-Edit-Walker.php:531
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
 msgstr ""
 
 #: ../models/Nav-Menu-Edit-Walker.php:166
-#: ../models/Nav-Menu-Edit-Walker.php:350
+#: ../models/Nav-Menu-Edit-Walker.php:352
+#: ../models/Nav-Menu-Edit-Walker.php:553
 #, php-format
 msgid "Original: %s"
 msgstr ""
 
 #: ../models/Nav-Menu-Edit-Walker.php:179
-#: ../models/Nav-Menu-Edit-Walker.php:363
+#: ../models/Nav-Menu-Edit-Walker.php:365
+#: ../models/Nav-Menu-Edit-Walker.php:566
 msgid "Remove"
 msgstr ""
 
 #: ../models/Nav-Menu-Edit-Walker.php:180
-#: ../models/Nav-Menu-Edit-Walker.php:364
+#: ../models/Nav-Menu-Edit-Walker.php:366
+#: ../models/Nav-Menu-Edit-Walker.php:567
 msgid "Cancel"
 msgstr ""
 
-#: ../models/Nav-Menu-Edit-Walker.php:248
+#: ../models/Nav-Menu-Edit-Walker.php:250
+#: ../models/Nav-Menu-Edit-Walker.php:434
 #, php-format
 msgid "%s (Invalid)"
 msgstr ""
 
-#: ../models/Nav-Menu-Edit-Walker.php:322
+#: ../models/Nav-Menu-Edit-Walker.php:324
+#: ../models/Nav-Menu-Edit-Walker.php:512
 msgid "Open link in a new window/tab"
 msgstr ""
 
+#: ../models/Nav-Menu-Edit-Walker.php:451
+msgid "sub item"
+msgstr ""
+
+#: ../models/Nav-Menu-Edit-Walker.php:537
+msgid "Move"
+msgstr ""
+
+#: ../models/Nav-Menu-Edit-Walker.php:538
+msgid "Up one"
+msgstr ""
+
+#: ../models/Nav-Menu-Edit-Walker.php:539
+msgid "Down one"
+msgstr ""
+
+#: ../models/Nav-Menu-Edit-Walker.php:542
+msgid "To the top"
+msgstr ""

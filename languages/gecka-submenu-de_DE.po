@@ -3,263 +3,252 @@ msgstr ""
 "Project-Id-Version: Gecka Submenu v0.7-beta4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-03-24 12:23:26+0000\n"
+"PO-Revision-Date: 2014-10-06 19:04+1100\n"
 "Last-Translator: josh <josh@pxlart.de>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: CSL v1.x\n"
-"X-Poedit-Language: German\n"
-"X-Poedit-Country: GERMANY\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Poedit-Basepath: ../\n"
-"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+"Language: de_DE\n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Textdomain-Support: yes"
 
+# @ gecka-submenu
 #: gecka-submenu.class.php:186
-#@ gecka-submenu
 msgid "You are using Gecka Submenu."
 msgstr "Sie nutzen Gecka Submenu."
 
+# @ gecka-submenu
 #: gecka-submenu.class.php:186
-#@ gecka-submenu
-msgid "<a href=\"http://www.gecka-apps.com\" target=\"_blank\">Discover the pro version</a> to get the most out of the Wordpress menu system."
-msgstr "<a href=\"http://www.gecka-apps.com\" target=\"_blank\">Entdecken Sie die Pro Version</a> um so viel wie möglich aus Ihren WordPress Menüs herauszuholen."
+msgid ""
+"<a href=\"http://www.gecka-apps.com\" target=\"_blank\">Discover the pro "
+"version</a> to get the most out of the Wordpress menu system."
+msgstr ""
+"<a href=\"http://www.gecka-apps.com\" target=\"_blank\">Entdecken Sie die "
+"Pro Version</a> um so viel wie möglich aus Ihren WordPress Menüs "
+"herauszuholen."
 
+# @ default
 #. translators: %s: title of menu item in draft status
-#: models/Nav-Menu-Edit-Walker.php:65
-#: models/Nav-Menu-Edit-Walker.php:252
+#: models/Nav-Menu-Edit-Walker.php:65 models/Nav-Menu-Edit-Walker.php:252
 #, php-format
-#@ default
 msgid "%s (Pending)"
 msgstr ""
 
-#: models/Nav-Menu-Edit-Walker.php:89
-#: models/Nav-Menu-Edit-Walker.php:276
-#@ default
+# @ default
+#: models/Nav-Menu-Edit-Walker.php:89 models/Nav-Menu-Edit-Walker.php:276
 msgid "Move up"
 msgstr ""
 
-#: models/Nav-Menu-Edit-Walker.php:102
-#: models/Nav-Menu-Edit-Walker.php:289
-#@ default
+# @ default
+#: models/Nav-Menu-Edit-Walker.php:102 models/Nav-Menu-Edit-Walker.php:289
 msgid "Move down"
 msgstr ""
 
-#: models/Nav-Menu-Edit-Walker.php:104
-#: models/Nav-Menu-Edit-Walker.php:106
-#: models/Nav-Menu-Edit-Walker.php:291
-#: models/Nav-Menu-Edit-Walker.php:293
-#@ default
+# @ default
+#: models/Nav-Menu-Edit-Walker.php:104 models/Nav-Menu-Edit-Walker.php:106
+#: models/Nav-Menu-Edit-Walker.php:291 models/Nav-Menu-Edit-Walker.php:293
 msgid "Edit Menu Item"
 msgstr ""
 
-#: models/Nav-Menu-Edit-Walker.php:115
-#: models/Nav-Menu-Edit-Walker.php:302
-#@ default
+# @ default
+#: models/Nav-Menu-Edit-Walker.php:115 models/Nav-Menu-Edit-Walker.php:302
 msgid "URL"
 msgstr ""
 
-#: models/Nav-Menu-Edit-Walker.php:122
-#: models/Nav-Menu-Edit-Walker.php:309
-#@ default
+# @ default
+#: models/Nav-Menu-Edit-Walker.php:122 models/Nav-Menu-Edit-Walker.php:309
 msgid "Navigation Label"
 msgstr ""
 
-#: models/Nav-Menu-Edit-Walker.php:128
-#: models/Nav-Menu-Edit-Walker.php:315
-#@ default
+# @ default
+#: models/Nav-Menu-Edit-Walker.php:128 models/Nav-Menu-Edit-Walker.php:315
 msgid "Title Attribute"
 msgstr ""
 
+# @ default
 #: models/Nav-Menu-Edit-Walker.php:134
-#@ default
 msgid "Link Target"
 msgstr ""
 
+# @ default
 #: models/Nav-Menu-Edit-Walker.php:136
-#@ default
 msgid "Same window or tab"
 msgstr ""
 
+# @ default
 #: models/Nav-Menu-Edit-Walker.php:137
-#@ default
 msgid "New window or tab"
 msgstr ""
 
-#: models/Nav-Menu-Edit-Walker.php:143
-#: models/Nav-Menu-Edit-Walker.php:327
-#@ default
+# @ default
+#: models/Nav-Menu-Edit-Walker.php:143 models/Nav-Menu-Edit-Walker.php:327
 msgid "CSS Classes (optional)"
 msgstr ""
 
-#: models/Nav-Menu-Edit-Walker.php:149
-#: models/Nav-Menu-Edit-Walker.php:333
-#@ default
+# @ default
+#: models/Nav-Menu-Edit-Walker.php:149 models/Nav-Menu-Edit-Walker.php:333
 msgid "Link Relationship (XFN)"
 msgstr ""
 
-#: models/Nav-Menu-Edit-Walker.php:155
-#: models/Nav-Menu-Edit-Walker.php:339
-#@ default
+# @ default
+#: models/Nav-Menu-Edit-Walker.php:155 models/Nav-Menu-Edit-Walker.php:339
 msgid "Description"
 msgstr ""
 
-#: models/Nav-Menu-Edit-Walker.php:157
-#: models/Nav-Menu-Edit-Walker.php:341
-#@ default
-msgid "The description will be displayed in the menu if the current theme supports it."
+# @ default
+#: models/Nav-Menu-Edit-Walker.php:157 models/Nav-Menu-Edit-Walker.php:341
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
 msgstr ""
 
-#: models/Nav-Menu-Edit-Walker.php:166
-#: models/Nav-Menu-Edit-Walker.php:350
+# @ default
+#: models/Nav-Menu-Edit-Walker.php:166 models/Nav-Menu-Edit-Walker.php:350
 #, php-format
-#@ default
 msgid "Original: %s"
 msgstr ""
 
-#: models/Nav-Menu-Edit-Walker.php:179
-#: models/Nav-Menu-Edit-Walker.php:363
-#@ default
+# @ default
+#: models/Nav-Menu-Edit-Walker.php:179 models/Nav-Menu-Edit-Walker.php:363
 msgid "Remove"
 msgstr ""
 
-#: models/Nav-Menu-Edit-Walker.php:180
-#: models/Nav-Menu-Edit-Walker.php:364
-#@ default
+# @ default
+#: models/Nav-Menu-Edit-Walker.php:180 models/Nav-Menu-Edit-Walker.php:364
 msgid "Cancel"
 msgstr ""
 
+# @ default
 #. translators: %s: title of menu item which is invalid
 #: models/Nav-Menu-Edit-Walker.php:248
 #, php-format
-#@ default
 msgid "%s (Invalid)"
 msgstr ""
 
+# @ default
 #: models/Nav-Menu-Edit-Walker.php:322
-#@ default
 msgid "Open link in a new window/tab"
 msgstr ""
 
+# @ gecka-submenu
 #: views/Nav-Menu-Fields.php:6
-#@ gecka-submenu
 msgid "Automatically populate with child pages"
 msgstr "Automatisch Unterseiten hinzufügen"
 
+# @ default
 #: widgets/Custom-menu.php:14
-#@ default
 msgid "Use this widget to add one of your custom menus as a widget."
 msgstr ""
 
+# @ default
 #: widgets/Custom-menu.php:16
-#@ default
 msgid "Custom Menu"
 msgstr ""
 
+# @ gecka-submenu
 #: widgets/Custom-menu.php:16
-#@ gecka-submenu
 msgid "[advanced]"
 msgstr "[erweitert]"
 
+# @ default
 #: widgets/Custom-menu.php:86
 #, php-format
-#@ default
 msgid "No menus have been created yet. <a href=\"%s\">Create some</a>."
 msgstr ""
 
+# @ default
 #: widgets/Custom-menu.php:92
-#@ default
 msgid "Title:"
 msgstr ""
 
+# @ gecka-submenu
 #: widgets/Custom-menu.php:97
-#@ gecka-submenu
 msgid "Use top parent item title"
 msgstr "Titel des obersten Elternelements verwenden"
 
+# @ default
 #: widgets/Custom-menu.php:100
-#@ default
 msgid "Select Menu:"
 msgstr ""
 
+# @ default
 #: widgets/Custom-menu.php:103
-#@ default
 msgid "Select"
 msgstr ""
 
+# @ gecka-submenu
 #: widgets/Custom-menu.php:114
-#@ gecka-submenu
 msgid "Start menu from:"
 msgstr "Menü beginnen mit:"
 
+# @ gecka-submenu
 #: widgets/Custom-menu.php:117
-#@ gecka-submenu
 msgid "Click save first"
 msgstr "Klicken Sie erst auf Speichern."
 
+# @ gecka-submenu
 #: widgets/Custom-menu.php:123
-#@ gecka-submenu
 msgid "Depth:"
 msgstr "Tiefe:"
 
+# @ gecka-submenu
 #: widgets/Custom-menu.php:129
-#@ gecka-submenu
 msgid "Show parent item"
 msgstr "Elternelement anzeigen"
 
+# @ gecka-submenu
 #: widgets/Custom-menu.php:131
-#@ gecka-submenu
 msgid "Show description"
 msgstr "Beschreibung anzeigen"
 
+# @ default
 #: widgets/Custom-menu.php:133
-#@ default
 msgid "No"
 msgstr ""
 
+# @ gecka-submenu
 #: widgets/Custom-menu.php:134
-#@ gecka-submenu
 msgid "Into link element"
 msgstr ""
 
+# @ gecka-submenu
 #: widgets/Custom-menu.php:135
-#@ gecka-submenu
 msgid "Into li element"
 msgstr ""
 
+# @ gecka-submenu
 #: widgets/Custom-menu.php:138
-#@ gecka-submenu
 msgid "Class:"
 msgstr "Klasse:"
 
-#: widgets/Custom-menu.php:162
-#: widgets/Custom-menu.php:171
-#@ gecka-submenu
+# @ gecka-submenu
+#: widgets/Custom-menu.php:162 widgets/Custom-menu.php:171
 msgid "First select a nav menu"
 msgstr "Wählen Sie erst ein nav Menü aus."
 
+# @ gecka-submenu
 #: widgets/Custom-menu.php:178
-#@ gecka-submenu
 msgid "Error: Unknow menu."
 msgstr "Fehler: Unbekanntes Menü"
 
+# @ gecka-submenu
 #: widgets/Custom-menu.php:184
-#@ gecka-submenu
 msgid "Nav menu root"
 msgstr ""
 
+# @ gecka-submenu
 #: widgets/Custom-menu.php:185
-#@ gecka-submenu
 msgid "Current page"
 msgstr "Aktuelle Seite"
 
+# @ gecka-submenu
 #: widgets/Custom-menu.php:186
-#@ gecka-submenu
 msgid "Current page's top parent"
 msgstr "Oberstes Elternelement der aktuellen Seite"
-
