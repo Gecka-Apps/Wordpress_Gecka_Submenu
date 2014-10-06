@@ -220,22 +220,22 @@ class Gecka_Submenu {
  *
  */
 class Gecka_Walker_Nav_Menu extends Walker_Nav_Menu {
-	
-	/**
-	 * @see Walker::start_el()
-	 * @since 3.0.0
-	 *
-	 * @param string $output Passed by reference. Used to append additional content.
-	 * @param object $item Menu item data object.
-	 * @param int $depth Depth of menu item. Used for padding.
-	 * @param int $current_page Menu item ID.
-	 * @param object $args
-	 */
-	function start_el(&$output, $item, $depth, $args) {
-		global $wp_query;
-		$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
 
-		$class_names = $value = '';
+    /**
+     * Start the element output.
+     *
+     * @see Walker::start_el()
+     *
+     * @since 3.0.0
+     *
+     * @param string $output Passed by reference. Used to append additional content.
+     * @param object $item   Menu item data object.
+     * @param int    $depth  Depth of menu item. Used for padding.
+     * @param array  $args   An array of arguments. @see wp_nav_menu()
+     * @param int    $id     Current item ID.
+     */
+	public function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
+		$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
 
 		$classes = empty( $item->classes ) ? array() : (array) $item->classes;
 		$classes[] = 'menu-item-' . $item->ID;
@@ -246,12 +246,23 @@ class Gecka_Walker_Nav_Menu extends Walker_Nav_Menu {
 		$id = apply_filters( 'nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args );
 		$id = strlen( $id ) ? ' id="' . esc_attr( $id ) . '"' : '';
 
-		$output .= $indent . '<li' . $id . $value . $class_names .'>';
+        $output .= $indent . '<li' . $id . $class_names .'>';
 
-		$attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
-		$attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
-		$attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
-		$attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
+        $atts = array();
+        $atts['title']  = ! empty( $item->attr_title ) ? $item->attr_title : '';
+        $atts['target'] = ! empty( $item->target )     ? $item->target     : '';
+        $atts['rel']    = ! empty( $item->xfn )        ? $item->xfn        : '';
+        $atts['href']   = ! empty( $item->url )        ? $item->url        : '';
+
+        $atts = apply_filters( 'nav_menu_link_attributes', $atts, $item, $args );
+
+        $attributes = '';
+        foreach ( $atts as $attr => $value ) {
+            if ( ! empty( $value ) ) {
+                $value = ( 'href' === $attr ) ? esc_url( $value ) : esc_attr( $value );
+                $attributes .= ' ' . $attr . '="' . $value . '"';
+            }
+        }
 
 		$item_output = apply_filters( 'nav_menu_item_before', $args->before, $item, $depth, $args, $attributes );
 		$item_output .= '<a'. $attributes .'>';
@@ -286,26 +297,31 @@ if(!class_exists('Walker_Nav_Menu_DropDown') && is_admin() ) {
          */
         var $db_fields = array( 'parent' => 'menu_item_parent', 'id' => 'db_id' );
 
-           /**
-         * @see Walker::start_el()
-         * @since 3.0.0
+        /**
+         * Start the element output.
          *
-         * @param string $output Passed by reference. Used to append additional content.
-         * @param object $item Menu item data object.
-         * @param int $depth Depth of menu item. Used for padding.
-         * @param int $current_page Menu item ID.
-         * @param object $args
+         * The $args parameter holds additional values that may be used with the child
+         * class methods. Includes the element output also.
+         *
+         * @since 2.1.0
+         * @abstract
+         *
+         * @param string $output            Passed by reference. Used to append additional content.
+         * @param object $object            The data object.
+         * @param int    $depth             Depth of the item.
+         * @param array  $args              An array of additional arguments.
+         * @param int    $current_object_id ID of the current item.
          */
-        function start_el(&$output, $item, $depth, $args) {
+        function start_el(&$output, $object, $depth = 0, $args = array(), $current_object_id = 0) {
         	
             global $wp_query;
             $pad = str_repeat('&nbsp;', $depth * 3);
             
-            $output .= "\t<option class=\"level-$depth\" value=\"".esc_attr($item->ID)."\"";
-            if ( (int)$item->ID === (int)$args['selected'] )
+            $output .= "\t<option class=\"level-$depth\" value=\"".esc_attr($object->ID)."\"";
+            if ( (int)$object->ID === (int)$args['selected'] )
                 $output .= ' selected="selected"';
             $output .= '>';
-            $output .= esc_html($pad . apply_filters( 'the_title', $item->title ));
+            $output .= esc_html($pad . apply_filters( 'the_title', $object->title ));
 
             $output .= "</option>\n";
         }
