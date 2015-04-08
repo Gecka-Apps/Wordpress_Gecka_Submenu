@@ -78,8 +78,12 @@ Class Gecka_Submenu_Submenu {
     		$auto_title = isset($instance['auto_title']) && $instance['auto_title'] ? true : false;
     		
     		$title = '';
+    		$before_icon = '';
     		if( $auto_title &&  $this->top_level_item) {
     			$title = $this->top_level_item->title;
+    			if(strlen($this->top_level_item->description) > 0 && strpos($this->top_level_item->description, 'fa-') !== false){
+                    $before_icon = '<span><i class="fa ' . $this->top_level_item->description . ' fa-2x"></i></span>';
+                }
     		}
     		else $title = $instance['title'];
        
@@ -88,7 +92,7 @@ Class Gecka_Submenu_Submenu {
     		echo $before_widget;
 
     		if($title) {
-    			echo $before_title . apply_filters('widget_title', $title, $instance) . $after_title;
+    			echo $before_title . $before_icon . apply_filters('widget_title', $title, $instance) . $after_title;
     		}
     		 
     		echo $out;
