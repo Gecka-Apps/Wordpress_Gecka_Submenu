@@ -66,6 +66,8 @@ class Gecka_Submenu_NavMenuHacks {
 
         $_ids = $this->get_ids($type, $order, $posts);
 
+        if( !is_array($posts) ) return $posts;
+
         foreach($posts as $key=>$post) {
 
             $id = isset($post->ID) ? $post->ID : $post->term_id;
