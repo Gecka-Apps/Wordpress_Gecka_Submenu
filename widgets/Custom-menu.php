@@ -9,11 +9,11 @@ class GKSM_Widget_Custom_Menu extends WP_Widget {
 										'class'=>''
 	                                  );
 	
-	public function GKSM_Widget_Custom_Menu () {
+	public function __construct () {
 		
 		$widget_ops = array('classname' => 'gksm-custom-menu-widget', 'description' => __('Use this widget to add one of your custom menus as a widget.'));
 		$control_ops = array('width' => 350, 'height' => 350);
-		parent::WP_Widget('gksm-custom-menu-widget', __('Custom Menu') . ' ' .  __('[advanced]', Gecka_Submenu::Domain ), $widget_ops, $control_ops);
+        parent::__construct('gksm-custom-menu-widget', __('Custom Menu') . ' ' .  __('[advanced]', Gecka_Submenu::Domain ), $widget_ops, $control_ops);
 	    
 	    // ajax select update
 	    add_action('wp_ajax_gksm_update', array($this, 'submenuOptionsAjax'));
