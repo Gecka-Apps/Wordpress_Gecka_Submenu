@@ -2,8 +2,8 @@
 Contributors: Gecka
 Tags: nav menu, 3.0, submenu, sub-menu, child, child men, subpages, subpage, dynamic menu, dynamic subpages, dynamic submenu
 Requires at least: 3.0
-Tested up to: 4.0
-Stable tag: 0.7.2
+Tested up to: 4.4
+Stable tag: 0.7.3
 Donate link: http://gecka-apps.com/wordpress-plugins/gecka-submenu-pro/
 
 Submenu autopopulates any nav menu page item with its children and allows to put menus, or portion of menus, anywhere in your site.
@@ -41,6 +41,10 @@ http://www.youtube.com/watch?v=DHjMfD-k2Mo
 2. Autopopulating with child pages
 
 == Changelog ==
+
+= 0.7.3 =
+* Support WP 4.3
+* Fixes
 
 = 0.7.2 =
 * Only show option to auto populate for nav menu item of type page
