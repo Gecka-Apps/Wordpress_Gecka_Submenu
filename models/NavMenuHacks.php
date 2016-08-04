@@ -53,7 +53,7 @@ class Gecka_Submenu_NavMenuHacks
 
                 case 'subpages' :
 
-                    $pages = get_pages(apply_filters('gecka-submenu-get_pages', array('child_of' => $item->object_id, 'sort_column' => 'menu_order, post_title', 'post_type' => isset($item->object) ? $item->object : 'page')));
+                    $pages = get_pages(apply_filters('gecka-submenu-get_pages', array('child_of' => $item->object_id, 'sort_column' => 'menu_order, post_title', 'post_type' => isset($item->object) ? $item->object : 'page', 'post_status' => current_user_can( 'read_private_pages' ) ? 'publish,private' : 'publish')));
 
                     $this->setup_posts('post', $item, $pages, $items, $order);
 
