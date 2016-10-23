@@ -3,7 +3,7 @@
 Plugin Name: Gecka Submenu
 Plugin URI: http://gecka-apps.com/wordpress-plugins/geka-submenu/
 Description: Enhances the worpdress nav menu system, autopopulate with children pages
-Version: 0.7.3
+Version: 0.7.4
 Author: Gecka Apps, Gecka
 Author URI: http://gecka-apps.com
 Text Domain: gecka-submenu
